@@ -111,7 +111,7 @@ public class tbl_RestaurantDAO implements Serializable {
         return result;
     }
     
-    public tbl_RestaurantDTO findByRestaurantID(String id) throws Exception {
+    public tbl_RestaurantDTO findByRestaurantID(String id) throws Exception  {
         tbl_RestaurantDTO dto = null;
         try {
             String sql = "SELECT RestaurantID, RestaurantName, Address, District, isDelete FROM tbl_Restaurant WHERE RestaurantID=?";
